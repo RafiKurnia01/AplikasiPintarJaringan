@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TugasAkhir</string>
+    <string name="judul1">Pintar Jaringan Dasar..</string>
+    <string name="judul2">MENU PILIHAN</string>
+    <string name="login">LOGIN</string>
+    <string name="logout">LOGOUT</string>
+    <string name="judul_help">You can contact us :</string>
+    <string name="email">rafikurniailahi00@gmail.com</string>
+    <string name="website">pintarjaringan.co.id</string>
+    <string name="pintarjaringan">pintarjaringan</string>
+    <string name="phone">082126182450</string>
+    <string name="computer_network_engineer"><![CDATA[COMPUTER & NETWORK ENGINEER]]></string>
+</resources>
