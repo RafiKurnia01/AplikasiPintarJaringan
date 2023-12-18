@@ -12,12 +12,12 @@ import retrofit2.Call
 import retrofit2.Response
 import javax.security.auth.callback.Callback
 
-class ListActivity : AppCompatActivity() {
+class ListActivity1 : AppCompatActivity() {
 
     lateinit var bthome: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_list)
+        setContentView(R.layout.activity_list1)
 
         bthome = findViewById(R.id.bthome)
         bthome.setOnClickListener {
@@ -25,14 +25,14 @@ class ListActivity : AppCompatActivity() {
             startActivity(intent)
         }
         val tarafi = findViewById<RecyclerView>(R.id.rvList)
-        ApiConfig.getService().getApi().enqueue(object : retrofit2.Callback<ResponseApi>{
-            override fun onResponse(call: Call<ResponseApi>, response: Response<ResponseApi>) {
+        ApiConfig.getService().getApi2().enqueue(object : retrofit2.Callback<ResponseApi2>{
+            override fun onResponse(call: Call<ResponseApi2>, response: Response<ResponseApi2>) {
                 if (response.isSuccessful){
                     val responseApi = response.body()
                     val dataApi = responseApi?.data
                     val apiAdapter = ApiAdapter(dataApi)
                     tarafi.apply {
-                        layoutManager = LinearLayoutManager(this@ListActivity)
+                        layoutManager = LinearLayoutManager(this@ListActivity1)
                         setHasFixedSize(true)
                         apiAdapter.notifyDataSetChanged()
                         adapter = apiAdapter
@@ -41,7 +41,7 @@ class ListActivity : AppCompatActivity() {
 
             }
 
-            override fun onFailure(call: Call<ResponseApi>, t: Throwable) {
+            override fun onFailure(call: Call<ResponseApi2>, t: Throwable) {
                 Toast.makeText(applicationContext, t.localizedMessage, Toast.LENGTH_SHORT).show()
             }
         })

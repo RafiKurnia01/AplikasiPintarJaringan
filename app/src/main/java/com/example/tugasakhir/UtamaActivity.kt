@@ -1,12 +1,15 @@
 package com.example.tugasakhir
 
 import android.app.Activity
+import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
+import android.widget.ImageView
+import android.widget.LinearLayout
 
 class UtamaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +29,28 @@ class UtamaActivity : AppCompatActivity() {
                 false
             )
             window.statusBarColor = Color.TRANSPARENT
+        }
+
+        var btnlogout : ImageView = findViewById(R.id.btnlogout)
+        btnlogout.setOnClickListener {
+            intent = Intent(this, LogoutActivity::class.java)
+            startActivity(intent)
+        }
+
+        var btkategori1 : LinearLayout = findViewById(R.id.btkategori1)
+        var btkategori2 : LinearLayout = findViewById(R.id.btkategori2)
+        var btkategori3 : LinearLayout = findViewById(R.id.btkategori3)
+        btkategori1.setOnClickListener {
+            var intent = Intent(this, ListActivity::class.java)
+            startActivity(intent)
+        }
+        btkategori2.setOnClickListener {
+            var intent = Intent(this, ListActivity1::class.java)
+            startActivity(intent)
+        }
+        btkategori3.setOnClickListener {
+            var intent = Intent(this, ListActivity2::class.java)
+            startActivity(intent)
         }
     }
 

@@ -10,15 +10,16 @@
     android:background="@drawable/bg_help">
 
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/btback"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:src="@drawable/baseline_arrow_back_ios_24"
-        android:layout_margin="10dp"/>
+        android:layout_margin="15dp"/>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="50dp"
+        android:layout_margin="30dp"
         app:cardCornerRadius="30dp"
         app:cardBackgroundColor="@color/warna5">
 
@@ -37,7 +38,7 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textAlignment="center"
-                android:layout_marginBottom="15dp"/>
+                android:layout_marginBottom="30dp"/>
 
             <LinearLayout
                 android:layout_margin="5dp"
@@ -55,7 +56,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    app:cardCornerRadius="30dp"
+                    app:cardCornerRadius="20dp"
                     app:cardBackgroundColor="@color/warna4">
 
                     <TextView
@@ -86,7 +87,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    app:cardCornerRadius="30dp"
+                    app:cardCornerRadius="20dp"
                     app:cardBackgroundColor="@color/warna4">
 
                     <TextView
@@ -116,7 +117,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    app:cardCornerRadius="30dp"
+                    app:cardCornerRadius="20dp"
                     app:cardBackgroundColor="@color/warna4">
 
                     <TextView
@@ -146,7 +147,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    app:cardCornerRadius="30dp"
+                    app:cardCornerRadius="20dp"
                     app:cardBackgroundColor="@color/warna4">
 
                     <TextView

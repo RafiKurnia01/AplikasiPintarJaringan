@@ -43,7 +43,7 @@
                     android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Nama User"
+                    android:text="Rafi"
                     android:fontFamily="@font/poppinssemibold"
                     android:textSize="20sp"
                     android:textAlignment="center"
@@ -51,6 +51,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/btkeluar"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
                 android:layout_width="100dp"
@@ -62,7 +63,7 @@
                     android:layout_height="match_parent"
                     android:text="@string/logout"
                     android:fontFamily="@font/poppinssemibold"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textAlignment="center"
                     android:textColor="@color/black"/>
             </androidx.cardview.widget.CardView>

@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import android.widget.Button
+import android.widget.ImageView
 import androidx.cardview.widget.CardView
 
 class LoginActivity : AppCompatActivity() {
@@ -32,10 +33,16 @@ class LoginActivity : AppCompatActivity() {
             window.statusBarColor = Color.TRANSPARENT
         }
 
-        val tombolKu : CardView = findViewById(R.id.tombollogin)
+        val tombolKu : Button = findViewById(R.id.btnLogin)
         tombolKu.setOnClickListener{
             val intentLogin = Intent(this@LoginActivity, UtamaActivity::class.java)
             startActivity(intentLogin)
+        }
+
+        val bthelp : ImageView = findViewById(R.id.btnhelp)
+        bthelp.setOnClickListener {
+            val intent = Intent(this, HelpActivity::class.java)
+            startActivity(intent)
         }
     }
 
